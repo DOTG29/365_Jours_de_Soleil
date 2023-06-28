@@ -270,7 +270,7 @@ td {
    padding:0 15px; 
 }
 
-th[scope='ville'] {
+th[scope='row'] {
     border-top: 2px solid black;
 }
 
