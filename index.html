@@ -14,16 +14,19 @@
       <h1>365 Jours de Soleil</h1>
       <nav>
         <ul>
-          <li><img src="IMG/cloud-sun-solid.svg" alt="icon-de-petit-soleil"></li>
-          <li><img src="IMG/water-solid.svg" alt="icon-de-leau"></li>
-          <li><img src="IMG/mountain-solid.svg" alt="icon-petite-montagne"></li>
-          <li><img src="IMG/globe-europe-solid.svg" alt="icon-de-petite-planete"></li>
+          <li><img src="IMG/cloud-sun-solid.svg" alt="icon-de-petit-soleil"><p>PREVISION</p></li>
+          <li><img src="IMG/water-solid.svg" alt="icon-de-leau"><p>MER</p></li>
+          <li><img src="IMG/mountain-solid.svg" alt="icon-petite-montagne"><p>MONTAGNE</p></li>
+          <li><img src="IMG/globe-europe-solid.svg" alt="icon-de-petite-planete"><p>CLIMAT</p></li>
         </ul>
       </nav>
     </header>
     <main>
+
+      <hr class="paralax">
+
       <section>
-        <h2>Prévisions à 8 jours</h2>
+        <h2>Prévisions à <span class="jours_8">8</span><span class="jours_10">10</span> jours</h2>
         <div class="container_article_aside">
           <div id="article"> 
           </div>
@@ -46,14 +49,58 @@
           </aside>
         </div>
       </section>
+
+      <div class="container_tab_img">
+        <section class="container_tab"> 
+          <h3>les relevés du jour</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>ville</th>
+                <th>météo</th>
+                <th>min</th>
+                <th>max</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="ville">londres</th>
+                <td>pluvieux</td>
+                <td class="max">16°</td>
+                <td class="min">-1°</td>
+              </tr>
+              <tr>
+                <th scope="ville">londres</th>
+                <td>pluvieux</td>
+                <td class="max">16°</td>
+                <td class="min">-1°</td>
+              </tr>
+              <tr>
+                <th scope="ville">londres</th>
+                <td>pluvieux</td>
+                <td class="max">16°</td>
+                <td class="min">-1°</td>
+              </tr>
+              <tr>
+                <th scope="ville">londres</th>
+                <td>pluvieux</td>
+                <td class="max">16°</td>
+                <td class="min">-1°</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <img src="IMG/ephemeride.png" alt="img_ephemeride">
+      </div>
+
       <div class="container_img_formulair">
         <div class="container_img">
-          <img src="IMG/route_neige.gif" alt="">
-          <img src="IMG/route_ete.jpg" alt="">
-          <img src="IMG/printemps.jpg" alt="">
-          <img src="IMG/nuageux.jpg" alt="">
-          <img src="IMG/Climadiag.jpg" alt="">
-          <img src="IMG/certif-intemperies.png" alt="">
+          <img src="IMG/route_neige.gif" alt="img_route_neige">
+          <img src="IMG/route_ete.jpg" alt="img_route_ete">
+          <img src="IMG/printemps.jpg" alt="img_printemps">
+          <img src="IMG/nuageux.jpg" alt="img_nuageux">
+          <img src="IMG/Climadiag.jpg" alt="img_climadiag">
+          <img src="IMG/certif-intemperies.png" alt="img_certif-intemperies">
         </div>
         <form action="">
           <h3>Abonnez-vous !</h3>
@@ -64,7 +111,7 @@
       </div>
     </main>
     <footer>
-
+      <h2>that’s all folks, nearly finished!! TDR © 2023</h2>
     </footer>
     <script src="JS/app.js" type="module"></script>
   </body>

@@ -48,6 +48,18 @@ const newArticle = [{
     icon: "IMG/chance-storm.png",
     temp_max: "14",
     tem_min: "6"
+},{
+    title_day: "LUN",
+    title_date: "27",
+    icon: "IMG/chance-storm.png",
+    temp_max: "14",
+    tem_min: "6"
+},{
+    title_day: "LUN",
+    title_date: "27",
+    icon: "IMG/chance-storm.png",
+    temp_max: "14",
+    tem_min: "6"
 }];
 
 for (let article of newArticle) {

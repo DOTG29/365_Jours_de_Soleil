@@ -11,3 +11,5 @@ git clone https://github.com/<votre nom d utilisateur>/<repo>
 5. faite cd void/ (si vous n'avez pas choisis le nom du dossier lors du ``git clone``).
 6. faite ``npm i`` et ``npm run dev``.
 7. et voila votre site est prêt !
+
+push apret 16:00 vue avec jean seb

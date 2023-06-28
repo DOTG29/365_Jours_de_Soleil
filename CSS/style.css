@@ -27,10 +27,10 @@ header img {
 }
 
 header h1 {
-    float: right;
-    margin: 20px 10rem 0 0;
+    text-align: center;
     color: white;
     font-size: 2rem;
+    margin-top: -80px;
     font-family: "Nosifer", cursive, bold;
 }
 
@@ -39,6 +39,7 @@ header h1 {
 nav {
     width: 100%;
     height: 50px;
+    margin-top: 20px;
     background-color:#0e4259;
 }
 
@@ -58,6 +59,10 @@ ul li {
     align-items: center;
 }
 
+li p {
+    display: none;
+}
+
 li img {
     width: 35px;
     height: 35px;
@@ -73,8 +78,21 @@ li:hover {
 
 main {
     width: 100%;
-    padding: 5vh 7.5% 0 7.5%;
+    padding: 5vh 7.5% 5vh 7.5%;
     background-color: #4FA3B6;
+}
+
+.paralax {
+    display: none;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 30rem;
+    box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%) ;
+    background-image: url("/IMG/paralax.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*section et article*/
@@ -85,6 +103,12 @@ section {
 
 section h2 {
     font-family: "Quicksand", sans-serif, bold;
+    display: flex;
+}
+
+.jours_10 {
+    display: none;
+    margin: 0 6px;
 }
 
 .container_article_aside {
@@ -111,6 +135,10 @@ section div {
     flex-direction: column;
     align-items: center;
     box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
+}
+
+.article:nth-child(n + 9) {
+    display: none;
 }
 
 .icon {
@@ -149,6 +177,7 @@ section div {
     left: 2px;
 }
 
+
 /*aside*/
 
 aside {
@@ -180,6 +209,58 @@ aside {
 .nav_secondair ul li i {
     margin-right: 15px;
     color:#096D93 ;
+}
+
+.nav_secondair ul li p {
+    color: black;
+}
+
+/*tableau*/
+
+.container_tab_img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+
+.container_tab_img img {
+    width: 70%;
+}
+
+.container_tab {
+    background-color: #fff;
+    padding: 1rem;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container_tab h3 {
+    margin-bottom: 20px;
+    color: #096D93;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+   border-top: 2px solid black;
+   padding:0 15px; 
+}
+
+th[scope='ville'] {
+    border-top: 2px solid black;
+}
+
+.max {
+    color: red;
+}
+
+.min {
+    color: blue;
 }
 
 /*les images et le formulair*/
@@ -222,4 +303,52 @@ input {
 
 .button {
     background-color: #4FA3B6;
+}
+
+/*partie footer*/
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #096D93;
+}
+
+footer h2 {
+    color: #fff;
+    font-family: "Nosifer", cursive, bold;
+}
+
+
+
+@media screen and (min-width:1200px) {
+    nav ul li p {
+        display: block;
+        color: #fff;
+        margin-left: 15px;
+    }
+
+    .paralax {
+        display: block;
+    }
+
+    .jours_10 {
+        display: block;
+    }
+    
+    .jours_8 {
+        display: none;
+    }
+    
+
+    .article {
+        width: 18%;
+    }
+
+    .article:nth-child(n + 9) {
+        display: block;
+    }
+    
 }
