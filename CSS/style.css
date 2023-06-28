@@ -11,12 +11,12 @@ body {
     width: 100%;
 }
 
-/*Partie header et nav*/
+/*Partie header*/
 /*header*/
 
 header {
     width: 100%;
-    height: 100px;
+    height: 150px;
     background-color: #096D93;
 }
 
@@ -40,7 +40,6 @@ nav {
     width: 100%;
     height: 50px;
     background-color:#0e4259;
-    margin: -5px 0 5vh 0 ;
 }
 
 nav ul {
@@ -68,4 +67,85 @@ li img {
 
 li:hover {
     background-color:rgba(79, 163, 182, 0.5);
+}
+
+/*partie main*/
+
+main {
+    width: 100%;
+    padding: 5vh 7.5% 0 7.5%;
+    background-color: #4FA3B6;
+}
+
+/*section et article*/
+
+section {
+    width: 65%;
+}
+
+section h2 {
+    font-family: "Quicksand", sans-serif, bold;
+}
+
+section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.article {
+    width: 49%;
+    height: 180px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+}
+
+.container_temp {
+    display: flex;
+}
+
+.temp_max {
+    color: red;
+    margin-right:5px ;
+}
+
+.temp_max::after {
+    content: "°";
+    color: red;
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+.temp_min {
+    color: blue;
+    margin-left:5px ;
+}
+
+.temp_min::after {
+    content: "°";
+    color: blue;
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+/*aside*/
+
+aside {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    float: right;
 }
