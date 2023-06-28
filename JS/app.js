@@ -1,4 +1,4 @@
-const articles = document.querySelector('div')
+const articles = document.getElementById('article')
 
 const newArticle = [{
     title_day: "LUN",
